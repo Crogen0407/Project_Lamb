@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-464135438169005644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e7870a4eed172848bd52da19d69a590, type: 3}
+  m_Name: IngameNodeSO
+  m_EditorClassIdentifier: 
+  guid: 679d359fb89a5264c9a08134d699f143
+  position: {x: -39, y: 288}
+  isFirstNode: 1
+  nodeType: 1
+  animationGroup: {fileID: 11400000, guid: 82be4bfa04b874f4fa55d1c2298eea4f, type: 2}
+  reader: {fileID: 11400000, guid: 096a0d56132461f4ba048bdc974149d7, type: 2}
+  text:
+    text: "<shake>\uD754\uB4E4\uC5B4~ \uD754\uB4E4\uC5B4!"
+    parsedText: "\uD754\uB4E4\uC5B4~ \uD754\uB4E4\uC5B4!"
+    tagAnimations:
+    - rid: 4199951122081251406
+  textOutputMethod: {fileID: 11400000, guid: c5b80e1ce6d66154f8479472a7579233, type: 2}
+  linkedNode: {fileID: 8259483817450863184}
+  references:
+    version: 2
+    RefIds:
+    - rid: 4199951122081251406
+      type: {class: ShakeAnimation, ns: Dialog.Tag, asm: Assembly-CSharp}
+      data:
+        startIndex: 0
+        endIndex: 9
+        calcurateEndIndex: 1
+        tag: shake
+        power: 10
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5428f57e6e1463b4b8d0636e183f2213, type: 3}
+  m_Name: TEST_Dialog
+  m_EditorClassIdentifier: 
+  dialogMode: 1
+  animGroup: {fileID: 11400000, guid: 82be4bfa04b874f4fa55d1c2298eea4f, type: 2}
+  defaultPlayerActor: {fileID: 11400000, guid: 096a0d56132461f4ba048bdc974149d7, type: 2}
+  nodes:
+  - {fileID: -464135438169005644}
+  - {fileID: 8259483817450863184}
+--- !u!114 &8259483817450863184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e7870a4eed172848bd52da19d69a590, type: 3}
+  m_Name: IngameNodeSO
+  m_EditorClassIdentifier: 
+  guid: 129e2ff579787f9458e8e93f54a87daa
+  position: {x: 214.5, y: 288}
+  isFirstNode: 0
+  nodeType: 1
+  animationGroup: {fileID: 11400000, guid: 82be4bfa04b874f4fa55d1c2298eea4f, type: 2}
+  reader: {fileID: 11400000, guid: 24df2bcdafcd9dc429b1429e3e0a8fbc, type: 2}
+  text:
+    text: "<wobble>\uC544\uBB34 \uB9D0\uD558\uAE30 <cs>\uC9C4\uC9DC <cs>\uC544\uBB34
+      <cs>\uB9D0 \n"
+    parsedText: "\uC544\uBB34 \uB9D0\uD558\uAE30 \uC9C4\uC9DC \uC544\uBB34 \uB9D0
+      \n"
+    tagAnimations:
+    - rid: 4199951012155097170
+    - rid: 4199951012155097171
+    - rid: 4199951012155097172
+    - rid: 4199951084630573135
+  textOutputMethod: {fileID: 11400000, guid: cf593c2ee1635754092708475eb6e48a, type: 2}
+  linkedNode: {fileID: 0}
+  references:
+    version: 2
+    RefIds:
+    - rid: 4199951012155097170
+      type: {class: CameraShakeEvent, ns: Dialog.Tag, asm: Assembly-CSharp}
+      data:
+        startIndex: 13
+        endIndex: 13
+        calcurateEndIndex: 0
+        tag: cs
+        shakePower: 10
+        shakeDuration: 0.2
+    - rid: 4199951012155097171
+      type: {class: CameraShakeEvent, ns: Dialog.Tag, asm: Assembly-CSharp}
+      data:
+        startIndex: 10
+        endIndex: 10
+        calcurateEndIndex: 0
+        tag: cs
+        shakePower: 10
+        shakeDuration: 0.2
+    - rid: 4199951012155097172
+      type: {class: CameraShakeEvent, ns: Dialog.Tag, asm: Assembly-CSharp}
+      data:
+        startIndex: 7
+        endIndex: 7
+        calcurateEndIndex: 0
+        tag: cs
+        shakePower: 10
+        shakeDuration: 0.2
+    - rid: 4199951084630573135
+      type: {class: WobbleAnimation, ns: Dialog.Tag, asm: Assembly-CSharp}
+      data:
+        startIndex: 0
+        endIndex: 16
+        calcurateEndIndex: 1
+        tag: wobble
+        power: 10
+        speed: 10
