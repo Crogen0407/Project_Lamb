@@ -1,0 +1,2 @@
+﻿QuestNUID,EQuestType,MaxCompleteCount,IsStartResetCount,RewardUID,RewardCount
+1,Player_LevelUp,2,FALSE,Currency_Crystal,50
