@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "636117595817",
+    "project_id": "project-lambs",
+    "storage_bucket": "project-lambs.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636117595817:android:0bad940f60974972bd5bb8",
+        "android_client_info": {
+          "package_name": "com.lambs.projectlambs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj0LDsqMzV9ARjCwZjjGibANsfFsYTUYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
