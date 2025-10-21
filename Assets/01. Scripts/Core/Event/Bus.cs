@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace Project_Lamb
 {
-    public static class EventBus<T> where T : struct, IGameEvent
+    public static class Bus<T> where T : IEvent
     {
         public delegate void Event(T evt);
         public static Event OnEvent;
 
-        public static void Publish(T evt) => OnEvent?.Invoke(evt);
+        public static void Raise(T evt) => OnEvent?.Invoke(evt);
     }
 }

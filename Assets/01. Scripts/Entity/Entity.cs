@@ -50,5 +50,21 @@ namespace Project_Lamb.Entities
                 }
             });
         }
+        public T GetCompo<T>(bool isDerived = false) where T : IEntityComponent
+        {
+            if (_components.TryGetValue(typeof(T), out IEntityComponent component))
+            {
+                return (T)component;
+            }
+
+            if (isDerived == false)
+                return default;
+
+            Type findType = _components.Keys.FirstOrDefault(t => t.IsSubclassOf(typeof(T)));
+            if (findType != null)
+                return (T)_components[findType];
+
+            return default;
+        }
     }
 }

@@ -2,5 +2,5 @@ using UnityEngine;
 
 namespace Project_Lamb
 {
-    public interface IGameEvent { }
+    public interface IEvent { }
 }
